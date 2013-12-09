@@ -19,7 +19,7 @@ app.controller('todoCtrl', ['$scope', function ($scope) {
 		if ($scope.activitie) {	
 			$scope.activities.push({name:$scope.activitie});
 		}else{
-			alert("Hey write something then click add");
+			alert("Hey escribe algo antes de dar click en Añadir");
 		}	
 	}
 	$scope.remove = function  (index) {
