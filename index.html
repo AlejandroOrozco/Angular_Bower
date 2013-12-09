@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Productos</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body ng-app="app">
+	<div class="nav nav-pills">
+		<li class="active"><a href="#/">Home</a></li>
+		<li><a href="#/products">Products</a></li>
+		<li><a href="#/todo">Todo</a></li>
+		<li><a href="#/about">About Us</a></li>
+	</div>
+	<div ng-view="">
+		
+	</div>
+</body>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="bower_components/angular/app.js"></script>
+	<script type="text/javascript" src="bower_components/angular/controllers/productsCtrl.js"></script>
+	<script type="text/javascript" src="/bower_components/angular/controllers/todoCtrl.js"></script>
+</html>

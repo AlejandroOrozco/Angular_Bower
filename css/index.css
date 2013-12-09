@@ -1,0 +1,30 @@
+body{
+	background-color: #eeeeee;
+}
+h1{
+	text-align: center;
+}
+form{
+	width: 50%;
+	margin: 0 auto;
+}
+.formuli{
+	width: 50%;
+	margin: 0 auto;
+}
+button{
+	width: 100%;
+}
+table thead th{
+	text-align: center;
+}
+
+.checkbox{
+	margin: 0 auto;
+	width: 20px;
+    height: 20px;
+}
+
+.done{
+	text-decoration:line-through;
+}

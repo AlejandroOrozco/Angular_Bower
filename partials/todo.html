@@ -1,0 +1,26 @@
+<h1>Todo</h1>
+<div class="formuli">
+<div class="row">
+  <div class="col-xs-10">
+    <input type="text" ng-enter="add()" class="form-control" ng-model="activitie" placeholder="Activitie..">
+  </div>
+  <div class="col-xs-2">
+    <input type="button" class="btn btn-success" ng-click="add()" value="Añadir">
+  </div>
+</div>
+	<table class="table table-bordered">
+		<thead>
+			<th>Actividad</th>
+			<th>Estado</th>
+		</thead>
+		<tr ng-repeat="a in activities">
+			<td><button class="btn btn-{{a.state? 'success done':'primary'}}" ng-click="remove($index)" >{{a.name}}</button></td>
+			<td><input class="checkbox left" ng-click="do(a)" type="checkbox" ng-model="a.state">
+			</td>
+		</tr>
+	</table>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="{{total()}}" aria-valuemin="0" aria-valuemax="100" style="width: {{total()}}%;">
+	  </div>
+	</div>
+</div>
